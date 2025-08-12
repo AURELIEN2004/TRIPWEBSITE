@@ -9,8 +9,6 @@
 }
 
 /* Colors */
-
-/* Colors */
 :root {
   --PrimaryColor: hsl(26, 93%, 50%);
   --HoverColor: hsl(26, 93%, 42%);
@@ -59,7 +57,7 @@
                top: 0;
                left: -500px;
                box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
-               transition: 5s ease;
+               transition: 1s ease;
                z-index: 1000;
 
               .navlists{
