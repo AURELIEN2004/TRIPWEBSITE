@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-    padding: 10;
-    margin: 10;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    transition: 3s ease;
-}
+// *{
+//     padding: 10;
+//     margin: 10;
+//     box-sizing: border-box;
+//     font-family: 'Poppins', sans-serif;
+//     transition: 3s ease;
+// }
 
 /* Colors */
 :root {
@@ -22,7 +22,7 @@
 }
 
 .home {
-  height: 70vh;
+  height: 80vh;
   background: linear-gradient(rgba(33,33,33,0.522), rgba(33,33,33,0.522)), url('../../Assets/image/img1.jpg');
   background-position: center;
   background-size: cover;
@@ -31,4 +31,88 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  position: relative;
+
+  .secContainer{
+
+       .homeText{
+        text-align: center;
+          
+           .title{
+               color: var(--whiteColor);
+               font-size: 2rem;
+               font-weight: 700;
+               line-height: 2.5rem;
+           }
+
+           .subTitle{
+               color: var(--whiteColor);
+               font-size: 13px;
+               font-weight: 320;
+               opacity: .9;
+               padding: 1rem 0;
+               max-width: 70%;
+               text-align: center;
+               margin: auto;
+           }
+
+           .btn{
+              padding: .6rem 2.5rem;
+
+           }
+       }
+
+       .homeCard {
+          width: 80%;
+          border-radius: 1rem;
+          padding: 2rem;
+          background: var(--whiteColor);
+          position: absolute;
+          gap: 1rem;
+          justify-content: center;
+          bottom: -35%;
+          left: 50%;
+          transform: translateX(-50%);
+          box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
+
+          .locationDiv, .distDiv, .priceDiv{
+            width: 100%;
+
+            label{
+              display: block;
+              color: var(--textColor);
+              font-size: 13px;
+              font-weight: 500;
+              padding-bottom: .4rem;
+            }
+
+            input{
+              width: 100%;
+              background: var(--inputColor);
+              border-radius: 10px;
+              border: none;
+              padding: 10px;
+              font-size: 13px;
+              font-weight: 500;
+
+              &::placeholder{
+                 font-size: 13px;
+                 opacity: .5;
+                 font-weight: 400;
+              }
+              &:focus{
+                outline: none;
+              }
+            }
+          }
+
+          .btn{
+             width: 100%;
+             padding: .6rem 1.5rem;
+             color: var(--whiteColor);
+             font-weight: 600;
+          }
+      }
+
+  }
 }

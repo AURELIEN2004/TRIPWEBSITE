@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    transition: 3s ease;
-}
+
 
 /* Colors */
 :root {
@@ -55,7 +49,7 @@
                padding: 1rem;
                width: 100%;
                top: 0;
-               left: -500px;
+               left: -520px;
                box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
                transition: 1s ease;
                z-index: 1000;
@@ -130,6 +124,16 @@
                 left: 0;
            }
         
+      }
+
+      .toggleNavbar{
+         .icon{
+             font-size: 25px;
+             color: var(--whiteColor);
+             &:hover{
+              color: var(--PrimaryColor);
+             }
+         }
       }
   }
 }
