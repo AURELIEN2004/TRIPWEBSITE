@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap');
 
 *{
-    padding: 10;
-    margin: 10;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     transition: 3s ease;
@@ -21,3 +21,70 @@
   --inputColor: hsl(330, 12%, 97%);
 }
 
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+    /* color: red; */
+
+    
+}
+.flex{
+    /* display: grid; */
+    align-items: center;
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+
+}
+.btn{
+    padding: .4rem 1.5rem;
+    background: var(--PrimaryColor);
+    outline: none;
+    cursor: pointer;
+    border-radius: 3rem;
+    border: none;
+}
+.btn a{
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+.btn:hover a{
+    color: var(--whiteColor);
+}
+
+.secIntro{
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 70%;
+}
+.secIntro p{
+    color: var(--textColor);
+    font-size: 13px;
+    font-weight: 500;
+}
+img, video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+}
