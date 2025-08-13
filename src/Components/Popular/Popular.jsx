@@ -84,47 +84,47 @@ const Popular = () => {
        
         </div>
 
-                          <div className="mainContent grid">
-                              {
-                                Data.map( (id,imgSrc,destTitle,location,grade )=>{
-                                    return( 
-                                      <div className="singleDestination">
-                                  <div className="destImage">
+            <div className="mainContent grid">
+                {
+                  Data.map(( {id,imgSrc,destTitle,location,grade})=>{
+                      return( 
+                        <div className="singleDestination">
+                    <div className="destImage">
 
-                                      <img src={imgSrc} alt=" title" />
+                        <img src={imgSrc} alt=" title" />
 
-                                      <div className="overlayInfo">
-                                        <h3>{destTitle}</h3>
-                                        <p>
-                                            {location}
-                                        </p>
-                                        {/* <BsArrowLeftShort className='icon'/> */}
-                                        <BsArrowRightShort className='icon' />
-                                      </div>
-                                      
-                                  </div>
+                        <div className="overlayInfo">
+                          <h3>{destTitle}</h3>
+                          <p>
+                              {location}
+                          </p>
+                          {/* <BsArrowLeftShort className='icon'/> */}
+                          <BsArrowRightShort className='icon' />
+                        </div>
+                        
+                    </div>
 
-                                  <div className="destFooter">
-                                    <div className="number">
-                                      0{id}
-                                    </div>
+                    <div className="destFooter">
+                      <div className="number">
+                        0{id}
+                      </div>
 
-                                    <div className="destTexte flex">
-                                        <h6>{location}</h6>
-                                        <span className='flex'>
-                                            <span className="dot">
-                                              <BsDot className='icon'/>
-                                            </span>
-                                            {grade}
-                                        </span>
-                                    </div>
+                      <div className="destTexte flex">
+                          <h6>{location}</h6>
+                          <span className='flex'>
+                              <span className="dot">
+                                <BsDot className='icon'/>
+                              </span>
+                              {grade}
+                          </span>
+                      </div>
 
-                                  </div>
-                                </div>
-                                    )
-                                })
-                              }
-                          </div>
+                    </div>
+                  </div>
+                      )
+                  })
+                }
+            </div>
 
 
       </div>

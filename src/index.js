@@ -8,9 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Rendu de l'application
 root.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
 );
 
 // Mesure des performances (optionnel)
